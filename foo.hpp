@@ -9,12 +9,12 @@
 std::vector< char > foo(std::list< Human >& people)
 {
     std::vector< char > retval(people.size());
-    std::for_each(people.begin(), people.end(), [](auto& c) { c->birthday() });
+    std::for_each(people.begin(), people.end(), [](auto& c) { c->birthday(); });
     std::transform(people.begin(), people.end(), retval.begin(), [&](auto& c) {
         if (c->isMonster)
-            retval.pushback('n');
+            retval.push_back('n');
         else
-            retval.pushback('y');
+            retval.push_back('y');
     });
     // Twoja implementacja tutaj
 
