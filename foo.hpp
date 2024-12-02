@@ -1,5 +1,7 @@
 #pragma once
 
+#pragma once
+
 #include "Human.hpp"
 
 #include <algorithm>
@@ -10,7 +12,7 @@ std::vector< char > foo(std::list< Human >& people)
 {
     std::vector< char > retval(people.size());
     std::for_each(people.begin(), people.end(), [](auto& c) { c.birthday(); });
-    std::transform(people.begin(), people.end(), retval.begin(), [&](auto& c) {
+    std::transform(people.begin(), people.end(), std::back_inserter(retval), [&](auto& c) {
         if (c.isMonster())
             return 'n';
         else
@@ -20,4 +22,5 @@ std::vector< char > foo(std::list< Human >& people)
 
     return retval;
 }
+
 
