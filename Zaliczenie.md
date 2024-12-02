@@ -8,7 +8,8 @@ Twoim zadaniem jest napisanie w pliku `foo.hpp` funkcji `foo`, która:
 
 Kolejność znaków powinna być odwrotna od kolejności osób.
 Do sprawdzenia warunku użyj metody `isMonster`.
-Innymi słowy, jeżeli metoda `isMonster` *i*-tej osoby na liście zwróci wartość `true`, to (*n* - *i*)-ty element zwracanego wektora powinien mieć wartość `n`
+Innymi słowy, jeżeli metoda `isMonster` *i*-tej osoby na liście zwróci wartość `true`,
+to (*n* - *i*)-ty element zwracanego wektora powinien mieć wartość `n`
 
 Użycie pętli for jest niedozwolone.
 Do zaliczenia zadania wykorzystaj algorytmy `std::for_each` lub `std::transform` (lub inne, jeżeli uznasz to za stosowne).
